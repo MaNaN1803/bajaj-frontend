@@ -31,7 +31,7 @@ function App() {
 
     try {
       const data = JSON.parse(jsonInput);
-      const response = await axios.post('http://localhost:5500/bfhl', data);
+      const response = await axios.post('https://bajaj-dev-challenge-backend.onrender.com/bfhl', data);
       setResponse(response.data);
       setIsLoading(false);
     } catch (err) {
